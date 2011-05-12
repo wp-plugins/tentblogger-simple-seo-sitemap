@@ -9,7 +9,7 @@ Stable tag: 1.0
 
 == Description ==
 
-This plugin goes as far as possible in streamlining the sitemap generation process so that you don’t have to do much thinking. Install-and-go, no setup required!
+This plugin goes as far as possible in streamlining the sitemap generation process so that you don't have to do much thinking. Install-and-go, no setup required!
 
   - Sitemap includes all posts and pages that are public.
   - Homepage is specified to update daily, posts weekly, and pages monthly each which a respective priority of 1, 0.8, and 0.6.
