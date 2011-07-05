@@ -3,7 +3,7 @@
 Plugin Name: TentBlogger Simple SEO Sitemap
 Plugin URI: http://tentblogger.com/seo-sitemap
 Description: <a href="http://tentblogger.com/seo-sitemap">SEO Sitemap</a> attempts to streamline the sitemap generation process as much as possible. Automatic creation, submission, and daily execution.
-Version: 1.0
+Version: 2.0
 Author: TentBlogger
 Author URI: http://tentblogger.com
 Author Email: info@tentblogger.com
@@ -43,7 +43,10 @@ function tentblogger_seo_sitemap_admin() {
 	if(function_exists('add_menu_page')) {
 		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-styles', '/tentblogger-simple-seo-sitemap/css/admin.css');
 		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-scripts', '/tentblogger-simple-seo-sitemap/javascript/admin.js', true);
-		add_menu_page('SEO Sitemap', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap', 'tentblogger_seo_sitemap_display');
+    if(!my_menu_exists('tentblogger-handle')) {
+      add_menu_page('TentBlogger', 'TentBlogger', 'administrator', 'tentblogger-handle', array($this, 'display'));
+    }
+    add_submenu_page('tentblogger-handle', 'TentBlogger', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display');
 	} // end if
 	
 	// Prepate the plugins options
@@ -314,5 +317,30 @@ function tentblogger_get_sitemap_location() {
    return $path;
 	 
 } // end tentblogger_get_sitemap_location
+
+	
+  /**
+   * http://wordpress.stackexchange.com/questions/6311/how-to-check-if-an-admin-submenu-already-exists
+   */
+  function my_menu_exists( $handle, $sub = false){
+    if( !is_admin() || (defined('DOING_AJAX') && DOING_AJAX) )
+      return false;
+    global $menu, $submenu;
+    $check_menu = $sub ? $submenu : $menu;
+    if( empty( $check_menu ) )
+      return false;
+    foreach( $check_menu as $k => $item ){
+      if( $sub ){
+        foreach( $item as $sm ){
+          if($handle == $sm[2])
+            return true;
+        }
+      } else {
+        if( $handle == $item[2] )
+          return true;
+      }
+    }
+    return false;
+  } // end my_menu_exists
 
 ?>
