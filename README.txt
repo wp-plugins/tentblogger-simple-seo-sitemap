@@ -3,7 +3,7 @@ Contributors: tentblogger
 Tags: sitemap, blog
 Requires at least: 3.1
 Tested up to: 3.2
-Stable tag: 2.1
+Stable tag: 2.2
 
 <a href="http://tentblogger.com/seo-sitemap">SEO Sitemap</a> attempts to streamline the sitemap generation process as much as possible. Automatic creation, submission, and daily execution.
 
@@ -33,6 +33,9 @@ This plugin goes as far as possible in streamlining the sitemap generation proce
 1. TentBlogger SEO Sitemap
 
 == Changelog ==
+
+= 2.2 =
+* Fixing an inaccuracy with the 'lastmod' date
 
 = 2.1 =
 * Resolving a repository conflict

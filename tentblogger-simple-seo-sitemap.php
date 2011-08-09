@@ -3,7 +3,7 @@
 Plugin Name: TentBlogger Simple SEO Sitemap
 Plugin URI: http://tentblogger.com/seo-sitemap
 Description: <a href="http://tentblogger.com/seo-sitemap">SEO Sitemap</a> attempts to streamline the sitemap generation process as much as possible. Automatic creation, submission, and daily execution.
-Version: 2.1
+Version: 2.2
 Author: TentBlogger
 Author URI: http://tentblogger.com
 Author Email: info@tentblogger.com
@@ -159,7 +159,7 @@ function tentblogger_generate_sitemap($is_scheduled) {
 				$current_post = '';
 				$current_post .= "\t<url>\n";
 					$current_post .= "\t\t<loc>" . get_permalink($post->id) . "</loc>\n";
-					$current_post .= "\t\t<lastmod>" . date(DATE_W3C, $post->post_modified) . "</lastmod>\n";
+					$current_post .= "\t\t<lastmod>" . date(DATE_W3C, strtotime($post->post_modified)) . "</lastmod>\n";
 
 					if($post->post_type == 'post') {
 						$current_post .= "\t\t<changefreq>weekly</changefreq>\n";
