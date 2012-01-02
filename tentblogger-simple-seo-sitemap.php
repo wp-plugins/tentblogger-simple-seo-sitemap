@@ -3,13 +3,13 @@
 Plugin Name: TentBlogger Simple SEO Sitemap
 Plugin URI: http://tentblogger.com/seo-sitemap
 Description: <a href="http://tentblogger.com/seo-sitemap">SEO Sitemap</a> attempts to streamline the sitemap generation process as much as possible. Automatic creation, submission, and daily execution.
-Version: 2.2
+Version: 2.3
 Author: TentBlogger
 Author URI: http://tentblogger.com
 Author Email: info@tentblogger.com
 License:
 
-    Copyright 2011 TentBlogger (info@tentblogger.com)
+    Copyright 2011 - 2012 TentBlogger (info@tentblogger.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
