@@ -1,11 +1,11 @@
 === TentBlogger Simple SEO Sitemap ===
-Contributors: tentblogger
-Tags: sitemap, blog
+Contributors: tentblogger, kidsguide
+Tags: Sitemap, Blog, SEO Sitemap
 Requires at least: 3.1
-Tested up to: 3.3
-Stable tag: 2.4
+Tested up to: 3.7.1
+Stable tag: 2.5
 
-Note: This plugin is no longer under active development. If you're interested in maintaining it, please contact me.
+A simple SEO sitemap.
 
 == Description ==
 
@@ -32,9 +32,13 @@ This plugin goes as far as possible in streamlining the sitemap generation proce
 
 == Screenshots ==
 
-1. TentBlogger SEO Sitemap
+1. TentBlogger SEO Sitemap Settings
 
 == Changelog ==
+
+= 2.5 =
+* Starting of new development
+* Renamed settings
 
 = 2.4 =
 * Ending development on the plugin
