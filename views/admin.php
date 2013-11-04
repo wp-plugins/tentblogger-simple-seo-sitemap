@@ -3,6 +3,8 @@
 <?php $options = get_option('tentblogger-seo-sitemap'); ?>
 <div class="wrap">
   <div class="icon">
+<div class="wrap">
+<div class="icon32" id="icon-options-general"><br></div>
     <h2>
       <?php _e("TentBlogger's SEO Sitemap Plugin", "tentblogger-seo-sitemap"); ?>
     </h2>
