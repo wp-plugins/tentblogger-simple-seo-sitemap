@@ -44,7 +44,7 @@ function tentblogger_seo_sitemap_admin() {
 		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-styles', '/tentblogger-simple-seo-sitemap/css/admin.css');
 		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-scripts', '/tentblogger-simple-seo-sitemap/javascript/admin.js', true);
     if(!my_menu_exists('tentblogger-handle')) {
-      add_menu_page('TentBlogger', 'TB SEO Sitemap', 'administrator', 'tentblogger-handle', array($this, 'display'));
+      add_menu_page('TB SEO Sitemap', 'TB SEO Sitemap', 'administrator', 'tentblogger-handle', array($this, 'display'));
     }
     add_submenu_page('tentblogger-handle', 'SEO Sitemap', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display');
 	} // end if
