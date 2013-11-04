@@ -3,7 +3,7 @@
 Plugin Name: TentBlogger Simple SEO Sitemap
 Plugin URI: http://tentblogger.com/seo-sitemap
 Description: <a href="http://tentblogger.com/seo-sitemap">SEO Sitemap</a> attempts to streamline the sitemap generation process as much as possible. Automatic creation, submission, and daily execution.
-Version: 2.4
+Version: 2.5
 Author: TentBlogger
 Author URI: http://tentblogger.com
 Author Email: info@tentblogger.com
@@ -46,7 +46,7 @@ function tentblogger_seo_sitemap_admin() {
     if(!my_menu_exists('tentblogger-handle')) {
       add_menu_page('TentBlogger', 'TentBlogger', 'administrator', 'tentblogger-handle', array($this, 'display'));
     }
-    add_submenu_page('tentblogger-handle', 'TentBlogger', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display');
+    add_submenu_page('tentblogger-handle', 'TB SEO Sitemap', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display');
 	} // end if
 	
 	// Prepate the plugins options
