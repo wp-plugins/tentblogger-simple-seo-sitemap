@@ -3,7 +3,7 @@ Contributors: tentblogger, kidsguide
 Tags: Sitemap, Blog, SEO Sitemap
 Requires at least: 3.1
 Tested up to: 3.7.1
-Stable tag: 2.5
+Stable tag: 2.6
 
 A simple SEO sitemap.
 
@@ -35,6 +35,8 @@ This plugin goes as far as possible in streamlining the sitemap generation proce
 1. TentBlogger SEO Sitemap Settings
 
 == Changelog ==
+= 2.6 =
+* Fixed Settings Problem
 
 = 2.5 =
 * Starting of new development
