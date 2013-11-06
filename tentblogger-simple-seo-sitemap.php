@@ -36,7 +36,7 @@ function tentblogger_seo_sitemap_admin() {
 
 	// Localization
 	if(function_exists('load_plugin_textdomain')) {
-		load_plugin_textdomain('tentblogger-seo-sitmeap', false, dirname(plugin_basename(__FILE__)) . '/lang');
+		load_plugin_textdomain('tentblogger-seo-sitemap', false, dirname(plugin_basename(__FILE__)) . '/lang');
 	} // end if
 
 	// Admin menu
