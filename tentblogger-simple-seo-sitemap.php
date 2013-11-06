@@ -34,25 +34,20 @@ License:
  */
 function tentblogger_seo_sitemap_admin() {
 
-	// Localization
-	if(function_exists('load_plugin_textdomain')) {
-		load_plugin_textdomain('tentblogger-seo-sitemap', false, dirname(plugin_basename(__FILE__)) . '/lang');
-	} // end if
+        // Localization 
+        if(function_exists('load_plugin_textdomain')) { 
+                load_plugin_textdomain('tentblogger-seo-sitmeap', false, dirname(plugin_basename(__FILE__)) . '/lang'); 
+        } // end if 
 
-	// Admin menu
-	if(function_exists('add_menu_page')) {
-		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-styles', '/tentblogger-simple-seo-sitemap/css/admin.css');
-		tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-scripts', '/tentblogger-simple-seo-sitemap/javascript/admin.js', true);
-    if(!my_menu_exists('tentblogger-handle')) {
-      add_menu_page('TB SEO Sitemap', 'TB SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap', array($this, 'display'));
-    }
-    add_submenu_page('tentblogger-handle', 'SEO Sitemap', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display');
-	} // end if
-	
-	// Prepate the plugins options
-	if(function_exists('add_option')) {
-		add_option('tentblogger-seo-sitemap');
-	} // end if
+        // Admin menu 
+        if(function_exists('add_menu_page')) { 
+                tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-styles', '/tentblogger-simple-seo-sitemap/css/admin.css'); 
+                tentblogger_seo_sitemap_load_file('tentblogger-seo-sitemap-admin-scripts', '/tentblogger-simple-seo-sitemap/javascript/admin.js', true); 
+    if(!my_menu_exists('tentblogger-handle')) { 
+      add_menu_page('TB SEO Sitemap', 'TB SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', array($this, 'display')); 
+    } 
+    add_submenu_page('tentblogger-handle', 'SEO Sitemap', 'SEO Sitemap', 'administrator', 'tentblogger-seo-sitemap-handle', 'tentblogger_seo_sitemap_display'); 
+        } // end if 
 	
 } // end tentblogger_seo_sitemap_admin
 add_action('admin_menu', 'tentblogger_seo_sitemap_admin');
