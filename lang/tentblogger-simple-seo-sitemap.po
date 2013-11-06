@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TentBlogger Simple SEO Sitemap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-12 09:22-0500\n"
+"PO-Revision-Date: 2011-05-12 09:23-0500\n"
+"Last-Translator: \n"
+"Language-Team: TentBlogger <info@tentblogger.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../views/admin.php:6
+msgid "TentBlogger's SEO Sitemap Plugin"
+msgstr ""
+
+#: ../views/admin.php:11
+msgid "Your blog is blocking search engines. Update <a href=\"options-privacy.php\">your privacy settings</a>!"
+msgstr ""
+
+#: ../views/admin.php:18
+msgid "SEO Sitemap"
+msgstr ""
+
+#: ../views/admin.php:23
+msgid "This plugin attempts to streamline the sitemap generation process. Automatic create, gzipping, submission to search engines, and daily execution."
+msgstr ""
+
+#: ../views/admin.php:28
+msgid "Last Successfully Executed: "
+msgstr ""
+
+#: ../views/admin.php:32
+msgid "Never"
+msgstr ""
+
+#: ../views/admin.php:35
+msgid "Your server is not configure to support file-write access. Please see <a href=\"http://tentblogger.com/seo-sitemap/\" target=\"_blank\">this post</a> for troubleshooting instructions."
+msgstr ""
+
+#: ../views/admin.php:39
+msgid "Sitemap successfully generated"
+msgstr ""
+
+#: ../views/admin.php:44
+msgid "Sitemap submitted to Google, Bing, and Yahoo!"
+msgstr ""
+
+#: ../views/admin.php:49
+msgid "Sitemap successfully gzipped."
+msgstr ""
+
+#: ../views/admin.php:61
+msgid "Read more about the plugin <a href=\"http://tentblogger.com/seo-sitemap\">here</a> and check out <a href=\"http://profiles.wordpress.org/users/tentblogger/\">my other plugins</a>! Feel free to <a href=\"http://twitter.com/tentblogger\" target=\"_blank\">follow me</a> on Twitter!"
+msgstr ""
+
